@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+     <!----------CSS-------------------->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <!------------NAVIGATION BAR------------------>
+    <nav id="navbar">
+        <header>JOSEPH ADEMOLA</header>
+        <ul>
+            <li><a class="nav-link" href= "#about-section">About</a></li>
+            <li><a class="nav-link" href= "#project-section">Project</a></li>
+            <li><a class="nav-link" href= "#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+     <!------------WELCOME SECTION------------------>
+    <section id="welcome-section">
+        <span id="span">I am a Programmer</span>
+        <h1 id="h1">Welcome to my Page</h1>
+    </section>
+     <!-------------ABOUT SECTION----------------->
+    <section id="about-section">
+        <h2 class="section-heading">About Me</h2>
+        <p class="section-subheading">Get to know what i do</p>
+        <div id="about-grid">
+
+            <div class="about">
+                <h3>Vision</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, pariatur.</p>
+            </div>
+    
+            <div  class="about">
+                <h3>Mission</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, pariatur.</p>
+            </div>
+    
+            <div  class="about">
+                <h3>Core Values</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, pariatur.</p>
+            </div>
+        </div>
+        
+    </section>
+     <!----------PROJECT SECTION-------------------->
+    <section id="project-section">
+        <h2 class="section-heading">Project</h2>
+        <p class="section-subheading">Take a look at some of my projects</p>
+        <div id="project-grid">
+            <div class="project">
+                <span>A Portfolio Website</span>
+                <img src="icons/masthead.PNG" alt="A Portfolio Website" class="project-img">
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam culpa laborum facilis incidunt! Ex, repellendus!</p>
+                <a class="project-link" href="#"><button type="submit" class="btn">Check</button></a>
+            </div>
+    
+            <div class="project">
+                <span>Covid 19 Data Visualization</span> 
+                <img src="icons/masthead.PNG" alt="Covid 19 Data Visualization" class="project-img">
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam culpa laborum facilis incidunt! Ex, repellendus!</p>
+                <a class="project-link" href="#"><button type="submit" class="btn">Check</button></a>
+            </div>
+    
+           <div class="project">
+                <span>Cartoon Graphics</span>
+                <img src="icons/masthead.PNG" alt="Cartoon Graphics" class="project-img">
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam culpa laborum facilis incidunt! Ex, repellendus!</p>
+                <a class="project-link" href="#"><button type="submit" class="btn">Check</button></a>
+            </div> 
+        </div>
+    </section>
+     <!----------CONTACT SECTION-------------------->
+    <section id="contact-section">
+        <h2 class="section-heading">Let Us Connect</h2>
+        <p class="section-subheading">Connect with me via any of the following channels</p>
+        <div id="form">
+             <!-----------FORM------------------->
+            <form action="#" id="contact-form">
+                <div class="form-control">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="enter your name" required>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="name" placeholder="yourname@gmail" required>
+                </div>
+                <div class="form-control">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="10" cols="20" placeholder="Type your message"
+                        name="message" required>
+                    </textarea>
+                </div>
+                
+                <div class="form-control">
+                    <button type="submit" id="form-button">SEND</button>
+                </div>
+                
+            </form>
+        </div>
+            <!--------PROFILE LINKS---------------------->
+        <div class="social">
+           
+            <a  
+                 href="https://linkedin.com/" target="_blank" 
+                class="social-link">
+                <img src="https://img.icons8.com/ios-glyphs/48/000000/linkedin.png" alt="my Linkedin profile"  class="linkedin-link">
+            </a>
+
+
+            <a  
+                href="https://instagram.com/" target="_blank" 
+                class="social-link">
+                <img src="https://img.icons8.com/ios/48/000000/instagram-new--v1.png " alt="my Instagram profile" class="instagram-link">
+            </a>
+
+            <a  
+                href="https://github.com/" target="_blank" 
+                class="social-link">
+                <img src="https://img.icons8.com/ios-glyphs/48/000000/github.png" alt="my gitHub profile"  id="profile-link">
+            </a>
+
+
+            <a  
+                 href="https://facebook.com/" target="_blank" 
+                class="social-link">
+                <img src="https://img.icons8.com/ios-glyphs/48/000000/facebook-circled--v1.png" alt="my Facebook profile"  id="facebook-link">
+             </a>
+
+        </div>
+    </section>
+     <!----------FOOTER SECTION-------------------->
+    <footer>
+        <span id="copyrights">Copyrights &copy 2021</span>
+        <span id="credit">Created by:  <a href="#" id="github_link">Joseph Ademola</a></span>
+    </footer>
+</body>
+</html>

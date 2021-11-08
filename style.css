@@ -1,0 +1,321 @@
+
+/*=------------General Styling----------*/
+
+*{      
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height:1.5rem;
+    background-color: whitesmoke;
+    font-family: calibri, 'Times New Roman', Times, serif, 'roboto';
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color:blue;
+}
+
+section{
+    margin:2rem;
+}
+
+.section-heading{
+    color:midnightblue;
+}
+ 
+ .section-heading, .section-subheading{
+     text-align:center;
+     font-family: calibri,'Times New Roman', Times, serif;
+ }
+
+/*------Navigation Bar---------*/
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.508);
+    padding:1rem;
+    font-family:monospace;
+}
+
+header{
+    font-size:24px;
+    font-weight:700;
+}
+
+ul{
+    list-style: none;
+    display:flex;
+ }
+
+ .nav-link{
+     padding:10px;
+     font-size: 18px;
+     font-weight: 700;
+ }
+
+ /*------Welcome section---------------*/
+
+ #welcome-section{
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     justify-content: center;
+     width:100%;
+     height:100vh;
+     line-height: 5rem;
+     margin:auto;
+     color:white;
+     background-color:grey;
+     /*background-image: url(productasset/profile1.jpg);*/
+ }
+  
+ #welcome-section>h1{
+     font-size: 3rem;
+     font-weight:300;
+ }
+
+ /*-------About Section-----------*/
+
+.about{
+    text-align: justify;
+    margin:1rem;
+    
+}
+
+#about-section{
+    padding-top: 2rem;
+    background-color: white;
+}
+
+#about-grid{
+    display:flex;
+    justify-content: center;
+    gap:2rem;
+    margin-top: 2rem;
+    margin-top: 2rem;
+}
+
+/*-----------Project Section-----------*/
+
+.project span{
+    font-style: italic;
+}
+
+#project-grid{
+    display:flex;
+    justify-content: center;
+    gap:2rem;
+}
+
+.project{
+    background-color: white;
+    text-align: center;
+    padding:2rem;
+    margin-top:2rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.508);
+}
+
+.project-img{
+    width:100%;
+    height:auto;
+}
+
+.btn{
+    padding:0.5rem;
+    margin:auto;
+    color:white;
+    background:midnightblue;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background:blue;
+}
+
+/*-----------Contact Section-----------*/
+
+#form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#contact-form{
+    width:40%;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+input[type=text]{
+    padding:5px;
+    border: 0;
+    box-shadow: 0 3px 5px rgba(72, 38, 136, 0.808);
+
+}
+
+input[type=email]{
+    padding:5px;
+    border: 0;
+    box-shadow: 0 3px 5px rgba(72, 38, 136, 0.808);
+}
+
+.form-control::placeholder{
+    padding:5px;   
+}
+
+#form-button{
+    background:midnightblue;
+    color:white;
+    cursor:pointer;
+    padding:0.5rem;
+    margin:0.5rem;
+}
+#form-button:hover{
+    background:blue;
+}
+
+.social{
+    width:70%;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    margin-bottom: 2rem;
+  
+}
+
+.social-link{
+    max-width: 48px;
+    height:auto;
+}
+
+#profile-link{
+    max-width:48px;
+    height:auto;
+}
+
+/*=--------------Footer Section------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+}
+
+footer a{
+    color:midnightblue;
+}
+
+/*---------Media Screen---------------*/
+
+@media(max-width:729px) {
+    nav{
+        justify-content: space-between;
+    }
+
+    #welcome-section{
+        flex-wrap:wrap;
+    }
+
+    #about-grid{
+        width:100%;
+        margin:auto;
+        gap:0.5rem;
+       
+    }
+
+    #project-grid{
+        width:75%;
+        margin:auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap:0.5rem;
+    }
+
+    #contact-form{
+        min-width:60%;
+    }
+}
+
+
+@media(max-width:600px) {
+    nav{
+        flex-wrap: wrap;
+        padding:1rem;
+    }
+
+    #welcome-section>h1{
+        font-size: 2rem;
+        font-weight:300;
+    }
+   
+   #about-grid{
+        max-width:80%;
+        margin:auto;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: center;
+        gap:0.5rem;
+       
+    }
+    .about{
+        padding:1rem;
+        width:100%;
+        margin:auto;
+    }
+
+    #project-grid{
+        max-width:100%;
+        margin:auto;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: center;
+        gap:0.5rem;
+    }
+
+    #contact-form{
+        width:100%;
+    }
+
+    .social{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:541px){
+    nav{
+        flex-direction: column;
+        align-items:center;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+    header{
+        font-size:24px;
+    }
+
+}
+
+/*-------------THE END--------------*/
+
+
+
